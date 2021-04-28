@@ -2,6 +2,7 @@
 {
     public class OrdersVm
     {
+        public int Id { get; set; }
         public string Username { get; set; }
         public decimal TotalPrice { get; set; }
 
