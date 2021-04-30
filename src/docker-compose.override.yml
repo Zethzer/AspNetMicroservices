@@ -11,6 +11,7 @@ services:
 
   mongoclient:
     container_name: mongoclient
+    restart: always
     depends_on:
       - catalogdb
     ports:
