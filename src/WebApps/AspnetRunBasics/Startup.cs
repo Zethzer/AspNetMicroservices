@@ -24,12 +24,12 @@ namespace AspnetRunBasics
             #region database services
 
             //// use in-memory database
-            //services.AddDbContext<AspnetRunContext>(c =>
-            //    c.UseInMemoryDatabase("AspnetRunConnection"));
+            services.AddDbContext<AspnetRunContext>(c =>
+                c.UseInMemoryDatabase("AspnetRunConnection"));
 
             // add database dependecy
-            services.AddDbContext<AspnetRunContext>(c =>
-                c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));
+            //services.AddDbContext<AspnetRunContext>(c =>
+            //    c.UseSqlServer(Configuration.GetConnectionString("AspnetRunConnection")));
 
             #endregion            
 
